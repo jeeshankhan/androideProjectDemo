@@ -45,10 +45,9 @@ class MyAdapter(val context: Context, val userList: List<MyDataModel>) :
         holder.title.text = userList[position].title
          // holder.imageviews.setImageURI(Uri.parse("http://api.learn2crack.com/android/images/marshmallow.png"))
          // Picasso.with(context).load(userList[position].url).resize(120, 60).into(holder.imageviews);
-        // Glide.with(context).load("http://api.learn2crack.com/android/images/marshmallow.png").into(holder.imageviews)
+         Glide.with(context).load("http://api.learn2crack.com/android/images/marshmallow.png").into(holder.imageviews)
 
 
-         // Picasso.with(context).load( Uri.parse(userList[position].url)).into(holder.imageviews)
             holder.btn.setOnClickListener() {
             Toast.makeText(context, "You clicked me." +Uri.parse(userList[position].url), Toast.LENGTH_SHORT).show()
             Log.d("MainActivity", "jeeshan khan" +  userList[position].url)
