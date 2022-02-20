@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+   <ImageView
+       android:id="@+id/photoCard4"
+       android:src="@drawable/card_4_pt_1"
+       android:layout_width="wrap_content"
+       android:layout_height="93dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       />
+    <LinearLayout
+        android:id="@+id/layoutCard4"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        app:layout_constraintLeft_toRightOf="@id/photoCard4"
+        >
+        <TextView
+            android:text="Hi I am, Dr. Avinash Kapoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#0e315a"
+            android:lineSpacingExtra="12sp"/>
+        <TextView
+            android:text="Your personalise GP."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#0e315a"
+            android:lineSpacingExtra="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2Card4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/photoCard4"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCard4">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="10sp"
+            android:textColor="#0e315a"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Start Consultation Now" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

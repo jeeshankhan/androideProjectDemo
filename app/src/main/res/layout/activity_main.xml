@@ -5,15 +5,117 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <!--Toolbar-->
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar"/>
+
+<!--Second child  -->
+    <FrameLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="wrap_content"
+        <!--First Card-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@drawable/fisr_card">
+
+            <TextView
+                android:id="@+id/textTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/topText"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.219"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.011" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            layout="@layout/first_card"
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="8dp"
+            />
+        <!-- Second Card-->
+        <include
+            layout="@layout/second_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end|top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="8dp" />
+    </FrameLayout>
+
+
+    <include
+        layout="@layout/third_card"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include5"
+        layout="@layout/fourth_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include4" />
+
+    <include
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/include6"
+        layout="@layout/sixth_card"
+        android:layout_width="399dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="79dp"
+        app:layout_constraintTop_toTopOf="@+id/include8"
+        tools:layout_editor_absoluteX="12dp" />
+
+    <include
+        android:id="@+id/include8"
+
+        layout="@layout/fifth_card"
+        android:layout_width="403dp"
+        android:layout_height="67dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="107dp"
+        app:layout_constraintTop_toTopOf="@+id/include5"
+        tools:layout_editor_absoluteX="8dp" />
+
+<!--<include layout="@layout/seven_card"/>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">apiapp</string>
+    <string name="topText">India’s 1st Pro-active Healthcare Management</string>
+    <string name="secondText">
+        AXIA cares for you. You are the one
+        working day night long to build this
+        organization Better everyday
+    </string>
+    <string name="card_2_tx_1">Consultation</string>
+    <string name="card_2_tx_2">Medicines</string>
+    <string name="card_2_tx_3">Lab Test</string>
+    <string name="card_3_tx_1">
+
+           Start Free
+
+            Primary Review
+
+    </string>
 </resources>
