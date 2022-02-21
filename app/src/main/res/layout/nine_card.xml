@@ -4,38 +4,41 @@
     android:layout_height="wrap_content"
     android:background="@color/transprent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <LinearLayout
-        android:layout_marginLeft="25dp"
-        android:padding="2dp"
-        android:gravity="center"
-        android:background="@drawable/round_corner_card"
-        android:orientation="horizontal"
+
         android:id="@+id/layoutCard81"
         android:layout_width="109dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/round_corner_card"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        >
-        <ImageView
-            android:src="@drawable/card_9_pt_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            android:textColor="#0e315a"
-            android:textAlignment="center"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/card_9_pt_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="sans-serif"
             android:lineSpacingExtra="5sp"
             android:text="Blog"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textAlignment="center"
+            android:textColor="#0e315a"
+            android:textSize="13sp"
+            android:textStyle="normal" />
     </LinearLayout>
     <LinearLayout
         android:gravity="center"
-        android:padding="2dp"
+        android:padding="4dp"
         android:background="@drawable/round_corner_card"
         android:orientation="horizontal"
         android:id="@+id/layoutCard82"
@@ -44,26 +47,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/layoutCard81"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="8dp"
         >
         <ImageView
             android:src="@drawable/card_9_pt_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <TextView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
             android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textSize="13sp"
-            android:textColor="#0e315a"
-            android:textAlignment="center"
             android:lineSpacingExtra="5sp"
             android:text="FAQ"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textAlignment="center"
+            android:textColor="#0e315a"
+            android:textSize="13sp"
+            android:textStyle="normal" />
     </LinearLayout>
     <LinearLayout
         android:gravity="center"
-        android:padding="2dp"
+        android:padding="4dp"
         android:background="@drawable/round_corner_card"
         android:orientation="horizontal"
         android:id="@+id/layoutCard83"
@@ -72,7 +77,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/layoutCard82"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="8dp"
         >
         <ImageView
             android:src="@drawable/ic_baseline_share_24"
@@ -86,6 +91,7 @@
             android:textAlignment="center"
             android:lineSpacingExtra="5sp"
             android:text="Share App"
+            android:layout_marginLeft="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>

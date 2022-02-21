@@ -13,4 +13,5 @@
     <color name="light_green">#e8fffa</color>
     <color name="light_black">#747A79</color>
     <color name="transprent">#00F2F4F4</color>
+    <color name="bg_color">#CEEAE4EA</color>
 </resources>
